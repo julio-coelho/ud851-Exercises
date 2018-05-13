@@ -20,7 +20,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class ChildActivity extends AppCompatActivity {
+public class ChildActivity p
 
     /* Field to store our TextView */
     private TextView mDisplayText;

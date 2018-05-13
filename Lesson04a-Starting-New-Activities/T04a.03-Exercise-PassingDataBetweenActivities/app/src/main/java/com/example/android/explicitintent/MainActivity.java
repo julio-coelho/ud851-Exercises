@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
                  * the destinationActivity variable. The constructor for an Intent also requires a
                  * context, which we stored in the variable named "context".
                  */
-                Intent startChildActivityIntent = new Intent(context, destinationActivity);
-
+p
                 // COMPLETED (2) Use the putExtra method to put the String from the EditText in the Intent
                 startChildActivityIntent.putExtra(Intent.EXTRA_TEXT, textEntered);
 
