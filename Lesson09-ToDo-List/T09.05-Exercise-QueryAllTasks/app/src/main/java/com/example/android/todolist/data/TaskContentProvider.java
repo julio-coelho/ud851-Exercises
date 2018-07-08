@@ -135,6 +135,15 @@ public class TaskContentProvider extends ContentProvider {
             case TASKS:
                 retCursor = db.query(TABLE_NAME, projection, selection, selectionArgs, null, null, sortOrder);
                 break;
+            case TASK_WITH_ID:
+                String id = uri.getPathSegments().get(1);
+
+                String mSelection = "_id=?";
+                String[] mSelectionArgs = new String[]{ id };
+
+                retCursor = db.query(TABLE_NAME, projection, mSelection, mSelectionArgs, null, null, sortOrder);
+
+                break;
             default:
                 throw  new UnsupportedOperationException("Unknown uri: " + uri);
         }
